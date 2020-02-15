@@ -78,9 +78,11 @@ namespace mPythonAudio {
     }
 
     //% block="get voice command within [TIME] seconds" blockType="reporter"
+    //% TIME.shadow="number" TIME.defl=2
     export function AudioGetAsrResult(parameter: any, block: any) {
+        let time = parameter.TIME.code;
         Generator.addInclude('MPython_Audio', '#include <MPython_Audio.h>');
         Generator.addObject(`audio`, `MPython_Audio`, `audio;`);
-        Generator.addCode(['audio.getAsrResult()', Generator.ORDER_ATOMIC]);
+        Generator.addCode([`audio.getAsrResult(${time})`, Generator.ORDER_ATOMIC]);
     }
 }
