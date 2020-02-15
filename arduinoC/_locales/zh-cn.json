@@ -1,0 +1,14 @@
+{
+    "mPythonAudio.AudioPlayerInit|block": "音频 初始化",
+    "mPythonAudio.AudioPlayerDeinit|block": "音频 释放缓存",
+    "mPythonAudio.AudioSetVolume|block": "设置音频音量 [VOLUME]",
+    "mPythonAudio.AudioControl|block": "音频 [CONTROL]",
+    "mPythonAudio.AudioPlay|block": "音频 播放 [PATH]",
+    "mPythonAudio.AudioRecorderInit|block": "录音 初始化",
+    "mPythonAudio.AudioRecord|block": "音频录制 存储路径 [PATH] 时长 [TIME] 秒",
+	"mPythonAudio.AudioRecorderDeinit|block": "录音 释放资源",
+    "mPythonAudio.AudioGetAsrResult|block": "识别 [TIME] 秒语音指令",
+    "mPythonAudio.CONTROL.PAUSE|menu": "暂停",
+    "mPythonAudio.CONTROL.RESUME|menu": "继续播放",
+    "mPythonAudio.CONTROL.STOP|menu": "停止"
+}
